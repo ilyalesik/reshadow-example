@@ -4,6 +4,8 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "reshadow/babel"
+    ["reshadow/babel", {
+        "postcss": true
+    }]
   ]
 }
