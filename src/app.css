@@ -1,0 +1,10 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 20px;
+}
