@@ -2,16 +2,16 @@ import React from "react";
 import styled, {css} from "reshadow";
 import {PrimaryButton} from "./PrimaryButton";
 
-const styles = css`
+const black = "#000000";
+const white = "#ffffff";
+
+export const WhiteButton = ({ ...props }) =>
+    styled`
   button {
-    border: solid 1px #000000;
-    background-color: #ffffff;
+    border: solid 1px ${black};
+    background-color: ${white};
   }
   span {
-    color: #000000;
+    color: ${black};
   }
-`;
-
-export const WhiteButton = (props) => {
-    return <PrimaryButton {...props} styles={styles} />
-};
+`(<PrimaryButton {...props} {...styled} />)
